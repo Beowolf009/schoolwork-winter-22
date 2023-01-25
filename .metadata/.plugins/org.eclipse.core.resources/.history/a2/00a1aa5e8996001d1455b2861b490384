@@ -1,0 +1,21 @@
+
+public class listWords {
+
+	public static void main(String[] args) {
+	    String sentence =  "The quick brown fox jumps over the lazy dog."; 
+        String[] word = sentence.split("\\s+"); 
+        
+        int wordCount = 1; 
+        int current = 0;
+        
+        for(int i = 0; i < sentence.length(); i++) {
+        	wordCount += i;
+        }
+        for(String w : word)
+            System.out.println(w + sentence.split(wordCount + " " + "\\s+").length);
+        
+        
+
+	}
+
+}

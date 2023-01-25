@@ -1,0 +1,25 @@
+
+public class listWords {
+
+	public static void main(String[] args) {
+	    String sentence =  "The quick brown fox jumps over the lazy dog."; 
+        int wordCount = 1; 
+        String[] word = sentence.split("\\s+");
+        
+        for(int i = 0; i < sentence.length(); i++) 
+        	  if(sentence.charAt(i) == ' ' && i < sentence.length() - 1 && sentence.charAt(i + 1) != ' ') 
+        		  wordCount ++;
+        		
+        		
+        	  
+        	
+        	//for(String w : word)
+        		System.out.println(word);
+        	
+        	System.out.println("There are " + wordCount + " words in the sentence");														//this is fine
+        
+        
+
+	}
+	
+}
